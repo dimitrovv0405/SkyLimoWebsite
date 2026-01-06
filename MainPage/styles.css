@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+}
+
+
+/* Header styles */
+header {
+    background-color: #0e0d09;
+    color: white;
+    padding: 20px;
+    position: relative;
+    height: 110px;
+}
+
+header img {
+    height: 100px;
+    width: 115px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #d2ab56;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav {
+    margin: 20px 70px;
+    top: 10px;
+    right: 400px;
+    position: absolute;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 150px;
+    list-style: none;
+}
+
+.nav-links li {
+    display: block;
+    padding: 10px;    
+}
+
+.make-reservation {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.make-reservation #p2 {
+    margin-top: 10px;
+    position: relative;
+    right: 60px;
+}
+
+.make-reservation #p3 {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    right: 28px;
+    color: #d2ab56;
+}
+
+
+/* Main content styles */
+main {
+    background: url(ChatGPT\ Image\ Jan\ 1\,\ 2026\,\ 06_12_59\ PM.png) no-repeat center center/cover;
+    height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-color: #0e0d09;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    top: -100px;
+    color: white;
+    height: auto;
+    width: 600px;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 0.75;
+        transform: translateY(0);
+    }
+}
+
+#title-hero {
+    color: #d2ab56;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#subtitle-hero {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 50px;
+    position: relative;
+    right: -25px;
+}
+
+#request-quote-btn {
+    background-color: #d2ab56;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#request-quote-btn:hover {
+    background-color: #b89044;
+    transition: 0.3s;
+}
