@@ -12,8 +12,8 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="VehicleListPage/vehicles.html">Vehicles</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="VehicleListPage/vehicles.html">Vehicles</a></li> <!--Need to create HTML file-->
+                <li><a href="about.html">About</a></li> <!--Need to make it scroll to about-us section-->
             </ul>
         </nav>
 
@@ -26,11 +26,78 @@
 
     <main>
         <section class="hero">
-            <h1 id="title-hero">Your Journey Starts in Luxury</h1>
-            <p id="subtitle-hero">Arrive in style with professional chauffeurs, premium vehicles, and flawless service.</p>
-            <button id="request-quote-btn">Request Your Quote</button>
+            <div class="hero-content">
+                <h1 id="title-hero">Your Journey Starts in Luxury</h1>
+                <p id="subtitle-hero">Arrive in style with professional chauffeurs, premium vehicles, and flawless service.</p>
+                <button id="request-quote-btn">Request Your Quote</button>
+            </div>
         </section> 
-        <!--TODO: The Rest for 1/6/2026-->
+        
+        <section class="about-us"> 
+            <div id="about-us-content">
+                <h1 id="title-about">Driven By Excellence</h1>
+                <p id="info-about-us">
+                    At Sky LIMO, we offer more than transportation — we deliver an elevated travel experience defined by elegance, 
+                    discretion, and uncompromising quality. From the moment you request a quote to your final destination, every 
+                    detail is thoughtfully curated to ensure exceptional comfort, flawless timing, and complete peace of mind. With 
+                    professional chauffeurs, impeccably maintained premium vehicles, and personalized service, each journey is 
+                    crafted to reflect the highest standard of luxury, whether for business, special occasions, or refined everyday 
+                    travel.
+                </p>
+            </div>
+
+            <div id="reviews-content">
+                <h1 id="title-reviews">See What Our Clients Say About Us:</h1>
+                <i class="left-arrow" onclick="previousReview()"></i> <!--Need to do functionality-->
+                <p id="review-1">
+                    "Sky LIMO transformed our wedding day with their impeccable service and stunning vehicles. From the 
+                    professionalism of the chauffeurs to the flawless timing and attention to every detail, everything exceeded our 
+                    expectations. They made our special day feel effortless and truly unforgettable — highly recommend!" - Sarah M.
+                </p>
+                <p id="review-2" style="display: none;">
+                    "Professional, punctual, and undeniably luxurious — Sky LIMO made our corporate event seamless and stylish from 
+                    start to finish. The chauffeurs were courteous and well-prepared, the vehicles were immaculate, and the entire 
+                    experience reflected a high standard of reliability and class. We couldn’t have asked for better service." - John D.
+                </p>
+                <p id="review-3" style="display: none;">
+                    "From start to finish, Sky LIMO exceeded our expectations with exceptional service and attention to detail. The 
+                    chauffeur was courteous, professional, and punctual, and the ride itself was smooth, comfortable, and flawless. 
+                    The entire experience reflected true luxury and reliability." - Emily R.
+                </p>
+                <i class="right-arrow" onclick="nextReview()"></i> <!--Need to do functionality-->
+            </div>
+        </section>
+
+        <section class="contact-us">
+            <div id="contact-us-content">
+                <h1 id="title-contact">Are You Ready For an Experience of a Lifetime?</h1>
+                
+                <div class="phone-numbers">
+                    <p id="contact-p1">Call/Text</p>
+                    <p id="contact-p2"><a href="tel:+17024160250">+1 (702) 416-0250</a></p>
+                    <p id="contact-p3"><a href="tel:+17024160250">+1 (702) 416-0250</a></p>
+                </div>
+
+                <div class="email-address">
+                    <p id="contact-p4">Email</p>
+                    <p id="contact-p5"><a href="mailto:milkokadikov@gmail.com">milkokadikov@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="VehicleListPage/vehicles.html">Vehicles</a></li> <!--Need to create HTML file-->
+                <li><a href="about.html">About</a></li> <!--Need to make it scroll to about-us section-->
+            </ul>
+        </nav>
+
+        <p class="copy-rights">&copy; 2026 SkyLIMO.com. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!--Need to do functionality-->
 </body>
 </html>
