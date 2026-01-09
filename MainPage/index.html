@@ -29,7 +29,7 @@
             <div class="hero-content">
                 <h1 id="title-hero">Your Journey Starts in Luxury</h1>
                 <p id="subtitle-hero">Arrive in style with professional chauffeurs, premium vehicles, and flawless service.</p>
-                <button id="request-quote-btn">Request Your Quote</button>
+                <button id="request-quote-btn"><a href="PriceEstimatePage/pricing.html">Request Your Quote</a></button>
             </div>
         </section> 
         
@@ -49,21 +49,23 @@
             <div id="reviews-content">
                 <h1 id="title-reviews">See What Our Clients Say About Us:</h1>
                 <i class="left-arrow" onclick="previousReview()"></i> <!--Need to do functionality-->
-                <p id="review-1">
-                    "Sky LIMO transformed our wedding day with their impeccable service and stunning vehicles. From the 
-                    professionalism of the chauffeurs to the flawless timing and attention to every detail, everything exceeded our 
-                    expectations. They made our special day feel effortless and truly unforgettable — highly recommend!" - Sarah M.
-                </p>
-                <p id="review-2" style="display: none;">
-                    "Professional, punctual, and undeniably luxurious — Sky LIMO made our corporate event seamless and stylish from 
-                    start to finish. The chauffeurs were courteous and well-prepared, the vehicles were immaculate, and the entire 
-                    experience reflected a high standard of reliability and class. We couldn’t have asked for better service." - John D.
-                </p>
-                <p id="review-3" style="display: none;">
-                    "From start to finish, Sky LIMO exceeded our expectations with exceptional service and attention to detail. The 
-                    chauffeur was courteous, professional, and punctual, and the ride itself was smooth, comfortable, and flawless. 
-                    The entire experience reflected true luxury and reliability." - Emily R.
-                </p>
+                <div id="review-container">
+                    <p class="review active">
+                        "Sky LIMO transformed our wedding day with their impeccable service and stunning vehicles. From the 
+                        professionalism of the chauffeurs to the flawless timing and attention to every detail, everything exceeded our 
+                        expectations. They made our special day feel effortless and truly unforgettable — highly recommend!" - Sarah M.
+                    </p>
+                    <p class="review">
+                        "Professional, punctual, and undeniably luxurious — Sky LIMO made our corporate event seamless and stylish from 
+                        start to finish. The chauffeurs were courteous and well-prepared, the vehicles were immaculate, and the entire 
+                        experience reflected a high standard of reliability and class. We couldn’t have asked for better service." - John D.
+                    </p>
+                    <p class="review">
+                        "From start to finish, Sky LIMO exceeded our expectations with exceptional service and attention to detail. The 
+                        chauffeur was courteous, professional, and punctual, and the ride itself was smooth, comfortable, and flawless. 
+                        The entire experience reflected true luxury and reliability." - Emily R.
+                    </p>
+                </div>
                 <i class="right-arrow" onclick="nextReview()"></i> <!--Need to do functionality-->
             </div>
         </section>

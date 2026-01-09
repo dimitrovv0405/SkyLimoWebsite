@@ -169,6 +169,7 @@ main {
     background-color: #1e1c16;
     position: relative;
     z-index: 100;
+    padding-bottom: 100px;
 }
 
 #about-us-content {
@@ -212,10 +213,23 @@ main {
     color: #b89044;
     font-size: 36px;
     margin-top: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-#reviews-content p {
+#reviews-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#reviews-content h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#review-container {
     color: white;
     font-size: 25px;
     line-height: 1.6;
@@ -224,7 +238,30 @@ main {
     border-radius: 10px;
     width: 60%;
     margin: 5px auto;
-    height: auto;
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.review {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.review.active {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
 }
 
 .right-arrow, .left-arrow {
@@ -233,15 +270,11 @@ main {
     display: inline-block;
     padding: 20px;
     cursor: pointer;
-    margin-top: 50px;
 }
 
 .left-arrow {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
-    position: relative;
-    left: -600px;
-    bottom: -150px;
 }
 
 .left-arrow:hover {
@@ -252,9 +285,6 @@ main {
 .right-arrow {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    position: relative;
-    right: -600px;
-    bottom: 180px;
 }
 
 .right-arrow:hover {
