@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pricing-styles.css">
+    <title>SkyLIMO.com/Request-Your-Quote</title>
+</head>
+<body>
+    <header>
+        <img src="images/IMG_2733.PNG" alt="SkyLIMO Logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../VehicleListPage/vehicles.html">Vehicles</a></li>
+                <li><a href="../index.html#about-us">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="make-reservation">
+            <p id="p1">Make your reservation today!</p>
+            <p id="p2">Call or Text:</p>
+            <p id="p3"><a href="tel:+17024160250">+1 (702) 416-0250</a></p>
+        </div>
+    </header>
+
+    <main>
+        <section class="pricing">
+            <div id="pricing-content">
+                <h1 id="title-pricing">Your Luxury Ride Starts Here</h1>
+                <p id="paragraph-pricing">
+                    Request a personalized quote in seconds — no obligation, just premium service.
+                </p>
+
+                <label for="email-address">Your Email:</label>
+                <input type="email" id="email-address" name="email-address" placeholder="your_email@example.com" required>
+
+                <label for="vehicle-type">Vehicle of your choosing:</label>
+                <select id="vehicle-type" name="vehicle-type" required>
+                    <option value="" disabled selected>Choose Your Vehicle</option>
+                    <option value="limo">Limo (2025 Cadillac Escalade)</option>
+                    <option value="party-bus">Party Bus (2024 Mercedes-Benz Sprinte Cargo Van)</option>
+                </select>
+
+                <label for="date-and-time">Date and Time:</label>
+                <input type="datetime-local" id="date-and-time" name="date-and-time" required>
+
+                <label for="request-details">Requests:</label>
+                <textarea id="request-details" name="request-details" rows="4" placeholder="Any special requests or details?" required></textarea>
+
+                <button id="submit-quote-btn" type="submit">Send Your Request</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

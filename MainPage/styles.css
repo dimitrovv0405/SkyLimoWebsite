@@ -5,6 +5,10 @@
     font-family: "Cormorant Garamond", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Header styles */
 header {
@@ -163,7 +167,7 @@ main {
 
 
 /* About Us Section */
-.about-us {
+#about-us {
     padding: 20px;
     text-align: center;
     background-color: #1e1c16;

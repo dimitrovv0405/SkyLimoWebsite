@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #0e0d09;
+    color: white;
+    padding: 20px;
+    position: relative;
+    height: 105px;
+    z-index: 100;
+}
+
+header img {
+    height: 90px;
+    width: 105px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #d2ab56;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav {
+    margin: 20px 70px;
+    top: 10px;
+    right: 400px;
+    position: absolute;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 150px;
+    list-style: none;
+}
+
+.nav-links li {
+    display: block;
+    padding: 10px;    
+}
+
+.make-reservation {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.make-reservation #p2 {
+    margin-top: 10px;
+    position: relative;
+    right: 60px;
+}
+
+.make-reservation #p3 {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    right: 21px;
+    color: #d2ab56;
+}
+
+
+/* Price Estimate Styles */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing {
+    position: relative;
+    padding: 250px 300px;
+    min-height: 100vh;
+    display: flex;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.pricing::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/ChatGPT\ Image\ Dec\ 31\,\ 2025\,\ 06_44_02\ PM.png) no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+#pricing-content {
+    color: white;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 25px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+    opacity: 0.8;
+    width: 75%;
+    position: relative;
+    top: -150px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 0.75;
+        transform: translateY(0);
+    }
+}
+
+#title-pricing {
+    color: #d2ab56;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#paragraph-pricing {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#email-address-label {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#pricing-content label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#pricing-content input,
+#pricing-content select,
+#pricing-content textarea {
+    display: block;
+    margin: 0 auto;
+}
+
+#email-address {
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 8px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+#vehicle-type label {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#vehicle-type {
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 8px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+#date-and-time {
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 8px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+#request-details {
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 8px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+#submit-quote-btn {
+    background-color: #d2ab56;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#submit-quote-btn:hover {
+    background-color: #b89044;
+    transition: 0.3s;
+}
