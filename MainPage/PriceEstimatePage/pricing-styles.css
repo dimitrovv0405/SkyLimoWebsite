@@ -196,7 +196,7 @@ main {
     border-radius: 10px;
 }
 
-#submit-quote-btn {
+.submit-quote-btn {
     background-color: #d2ab56;
     color: white;
     border: none;
@@ -208,7 +208,58 @@ main {
     margin-top: 20px;
 }
 
-#submit-quote-btn:hover {
+.submit-quote-btn:hover {
     background-color: #b89044;
     transition: 0.3s;
+}
+
+
+/* Message after form submission */
+.loader {
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    margin-top: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    display: none;
+}
+
+.loader.show {
+    display: block;
+}
+
+.loader i {
+    color: #d2ab56;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form-message {
+    display: none;
+    width: 60%;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-message.show {
+    display: block;
+
+}
+
+.success-msg {
+    color: #d2ab56;
+    line-height: 3;
 }

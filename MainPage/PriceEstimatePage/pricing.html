@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pricing-styles.css">
     <title>SkyLIMO.com/Request-Your-Quote</title>
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,25 +33,36 @@
                     Request a personalized quote in seconds — no obligation, just premium service.
                 </p>
 
-                <label for="email-address">Your Email:</label>
-                <input type="email" id="email-address" name="email-address" placeholder="your_email@example.com" required>
+                <form id="contact-form">
+                    <label for="email-address">Your Email:</label>
+                    <input type="email" id="email-address" name="email" placeholder="your_email@example.com" required>
 
-                <label for="vehicle-type">Vehicle of your choosing:</label>
-                <select id="vehicle-type" name="vehicle-type" required>
-                    <option value="" disabled selected>Choose Your Vehicle</option>
-                    <option value="limo">Limo (2025 Cadillac Escalade)</option>
-                    <option value="party-bus">Party Bus (2024 Mercedes-Benz Sprinte Cargo Van)</option>
-                </select>
+                    <label for="vehicle-type">Vehicle of your choosing:</label>
+                    <select id="vehicle-type" name="vehicle" required>
+                        <option value="" disabled selected>Choose Your Vehicle</option>
+                        <option value="limo">Limo (2025 Cadillac Escalade)</option>
+                        <option value="party-bus">Party Bus (2024 Mercedes-Benz Sprinte Cargo Van)</option>
+                    </select>
 
-                <label for="date-and-time">Date and Time:</label>
-                <input type="datetime-local" id="date-and-time" name="date-and-time" required>
+                    <label for="date-and-time">Date and Time:</label>
+                    <input type="datetime-local" id="date-and-time" name="date-time" required>
 
-                <label for="request-details">Requests:</label>
-                <textarea id="request-details" name="request-details" rows="4" placeholder="Any special requests or details?" required></textarea>
+                    <label for="request-details">Requests:</label>
+                    <textarea id="request-details" name="request" rows="4" placeholder="Any special requests or details?" required></textarea>
 
-                <button id="submit-quote-btn" type="submit">Send Your Request</button>
+                    <button class="submit-quote-btn" type="submit">Send Your Request</button>
+                </form>
+
+                <div class="loader">
+                    <i class="lni lni-spinner-3"></i>
+                </div>
+
+                <div class="form-message"></div>
             </div>
         </section>
     </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="sentScript.js"></script>
 </body>
 </html>
