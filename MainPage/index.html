@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>SkyLIMO.com</title>
 </head>
 <body>
     <header>
         <img src="images/IMG_2733.PNG" alt="SkyLIMO Logo" class="logo">
         <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="VehicleListPage/vehicles.html">Vehicles</a></li> <!--Need to create HTML file-->
+                <li><a href="VehicleListPage/vehicles.html">Vehicles</a></li>
                 <li><a href="#about-us">About</a></li>
             </ul>
         </nav>
@@ -77,12 +83,11 @@
                 <div class="phone-numbers">
                     <p id="contact-p1">Call/Text</p>
                     <p id="contact-p2"><a href="tel:+17024160250">+1 (702) 416-0250</a></p>
-                    <p id="contact-p3"><a href="tel:+17024160250">+1 (702) 416-0250</a></p>
                 </div>
 
                 <div class="email-address">
                     <p id="contact-p4">Email</p>
-                    <p id="contact-p5"><a href="mailto:milkokadikov@gmail.com">milkokadikov@gmail.com</a></p>
+                    <p id="contact-p5"><a href="mailto:skylimousinelasvegas@gmail.com">skylimousinelasvegas@gmail.com</a></p>
                 </div>
             </div>
         </section>
@@ -92,14 +97,14 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="VehicleListPage/vehicles.html">Vehicles</a></li> <!--Need to create HTML file-->
-                <li><a href="about.html">About</a></li> <!--Need to make it scroll to about-us section-->
+                <li><a href="VehicleListPage/vehicles.html">Vehicles</a></li>
+                <li><a href="#about-us">About</a></li>
             </ul>
         </nav>
 
         <p class="copy-rights">&copy; 2026 SkyLIMO.com. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script> <!--Need to do functionality-->
+    <script src="script.js"></script>
 </body>
 </html>

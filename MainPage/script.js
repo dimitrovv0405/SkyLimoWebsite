@@ -17,3 +17,23 @@ function nextReview() {
     currentIndex = (currentIndex + 1) % reviews.length;
     reviews[currentIndex].classList.add('active');
 }
+
+// Hamburger menu toggle
+function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+
+    // Close menu when a link is clicked (for better UX on mobile)
+    const links = navLinks.querySelectorAll('a');
+    for (let link of links) {
+        link.addEventListener('click', closeMenu);
+
+        function closeMenu() {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    }
+}

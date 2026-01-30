@@ -48,6 +48,11 @@ nav {
     font-size: 20px;
 }
 
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+}
+
 .nav-links {
     display: flex;
     gap: 150px;
@@ -78,6 +83,11 @@ nav {
     position: relative;
     right: 21px;
     color: #d2ab56;
+}
+
+.make-reservation #p3:hover {
+    color: #e2bc6a;
+    transition: 0.3s;
 }
 
 

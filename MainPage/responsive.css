@@ -1,0 +1,284 @@
+/* Dimentions for 1180px or less */
+@media (max-width: 1180px) {
+    nav {
+        right: 250px;
+    }
+
+    .nav-links {
+        gap: 150px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: auto;
+    }
+
+    #about-us-content {
+        width: 100000px;
+    }
+
+    footer .nav-links {
+        position: relative;
+        left: 35px;
+        gap: 200px;
+    }
+}
+
+/* Dimentions for 820px or less */
+@media (max-width: 820px) {
+    header {
+        overflow: visible;
+    }
+
+    header img {
+        left: 25px;
+    }
+
+    nav {
+        right: 20px;
+        position: static;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 105px;
+        left: 0;
+        right: 0;
+        background-color: #0e0d09;
+        padding: 0;
+        gap: 0;
+        z-index: 1000;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+        padding: 20px 0;
+        overflow: visible;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        list-style: none;
+    }
+
+    .nav-links li a {
+        color: white;
+        display: block;
+        font-size: 18px;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    /* Hamburger menu icon */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 1001;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #d2ab56;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    /* Hamburger animation when active */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    .make-reservation {
+        position: absolute;
+        left: 53%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .make-reservation #p2 {
+        position: static;
+        right: auto;
+        margin-top: 10px;
+    }
+
+    .make-reservation a {
+        font-size: 20px;
+    }
+
+    .make-reservation #p3 {
+        position: static;
+        right: auto;
+        margin-top: 5px;
+    }
+
+    .hero {
+        padding: 150px 20px;
+    }
+
+    .hero-content {
+        padding: 20px;
+        width: 90%;
+    }
+
+    #about-us {
+        padding: 40px 20px;
+    }
+
+    #about-us-content {
+        padding: 20px;
+    }
+
+    #about-us-content p {
+        padding: 5px 30px;
+    }
+
+    /* Footer nav-links - reset to normal display */
+    footer .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        max-height: none;
+        overflow: visible;
+        padding: 0;
+        gap: 50px;
+        background-color: transparent;
+        justify-content: center;
+    }
+
+    footer .nav-links li {
+        border-bottom: none;
+        padding: 10px;
+    }
+}
+
+
+/* Dimentions for 480px or less */
+@media (max-width: 480px) {
+
+    header img {
+        height: 80px;
+        width: 85px;
+        left: 15px;
+    }
+
+    .make-reservation {
+        font-size: 10px;
+    }
+
+    .make-reservation a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 100px 10px;
+    }
+
+    .hero-content {
+        width: 70%;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    #title-hero {
+        font-size: 25px;
+    }
+
+    #subtitle-hero {
+        font-size: 20px;
+        padding: 2px;
+        text-align: center;
+    }
+
+    #request-quote-button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .make-reservation {
+        font-size: 16px;
+    }
+
+    .make-reservation a {
+        font-size: 18px;
+    }
+
+    #about-us h1 {
+        font-size: 30px;
+    }
+
+    #about-us-content p {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    #reviews-content h1 {
+        font-size: 30px;
+    }
+
+    #reviews-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #review-container {
+        min-height: 120px;
+        padding: 10px;
+        font-size: 18px;
+        order: 2;
+    }
+
+    .left-arrow, .right-arrow {
+        padding: 12px;
+        border-width: 0 6px 6px 0;
+    }
+
+    .left-arrow {
+        order: 1;
+        transform: rotate(-135deg);
+    }
+
+    .right-arrow {
+        order: 3;
+        transform: rotate(45deg);
+    }
+
+    #contact-us-content h1 {
+        font-size: 25px;
+    }
+
+    #contact-us-content p {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+}
