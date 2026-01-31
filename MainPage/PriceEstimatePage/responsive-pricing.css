@@ -8,19 +8,8 @@
         gap: 150px;
     }
 
-    .hero-content {
+    #pricing-content {
         width: 100%;
-        padding: auto;
-    }
-
-    #about-us-content {
-        width: 100000px;
-    }
-
-    footer .nav-links {
-        position: relative;
-        left: 35px;
-        gap: 200px;
     }
 }
 
@@ -142,50 +131,18 @@
         margin-top: 5px;
     }
 
-    .hero {
+    .pricing {
         padding: 150px 20px;
     }
 
-    .hero-content {
+    #pricing-content {
         padding: 20px;
-        width: 90%;
-    }
-
-    #about-us {
-        padding: 40px 20px;
-    }
-
-    #about-us-content {
-        padding: 20px;
-    }
-
-    #about-us-content p {
-        padding: 5px 30px;
-    }
-
-    /* Footer nav-links - reset to normal display */
-    footer .nav-links {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        max-height: none;
-        overflow: visible;
-        padding: 0;
-        gap: 50px;
-        background-color: transparent;
-        justify-content: center;
-    }
-
-    footer .nav-links li {
-        border-bottom: none;
-        padding: 10px;
+        width: 70%;
     }
 }
 
-
 /* Dimentions for 480px or less */
 @media (max-width: 480px) {
-
     header img {
         height: 80px;
         width: 85px;
@@ -193,97 +150,43 @@
     }
 
     .make-reservation {
-        font-size: 10px;
+        font-size: 12px;
     }
 
-    .make-reservation a {
-        font-size: 14px;
+    .make-reservation p {
+        font-size: 13px;
     }
 
-    .hero::before {
-        background: url(Gemini_Generated_Image_4czrb44czrb44czr.png) no-repeat center center;
+    #pricing-content {
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    #pricing-content h1 {
+        font-size: 20px;
+    }
+
+    #pricing-content p {
+        font-size: 17px;
+    }
+
+    #contact-form label {
+        font-size: 15px;
+    }
+
+    #contact-form button {
+        font-size: 15px;
+    }
+
+    .pricing::before {
+        background: url(images/Gemini_Generated_Image_70w5r770w5r770w5.png) no-repeat center center;
         background-size: cover;
     }
 
-    .hero {
-        padding: 100px 10px;
-    }
-
-    .hero-content {
-        width: 70%;
-        padding: 10px;
-        border-radius: 20px;
-    }
-
-    #title-hero {
-        font-size: 25px;
-    }
-
-    #subtitle-hero {
-        font-size: 20px;
-        padding: 2px;
-        text-align: center;
-    }
-
-    #request-quote-button {
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-
-    .make-reservation {
-        font-size: 16px;
-    }
-
-    .make-reservation a {
-        font-size: 18px;
-    }
-
-    #about-us h1 {
-        font-size: 30px;
-    }
-
-    #about-us-content p {
-        font-size: 14px;
-        padding: 5px 10px;
-    }
-
-    #reviews-content h1 {
-        font-size: 30px;
-    }
-
-    #reviews-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #review-container {
-        min-height: 120px;
-        padding: 10px;
-        font-size: 18px;
-        order: 2;
-    }
-
-    .left-arrow, .right-arrow {
-        padding: 12px;
-        border-width: 0 6px 6px 0;
-    }
-
-    .left-arrow {
-        order: 1;
-        transform: rotate(-135deg);
-    }
-
-    .right-arrow {
-        order: 3;
-        transform: rotate(45deg);
-    }
-
-    #contact-us-content h1 {
-        font-size: 25px;
-    }
-
-    #contact-us-content p {
-        font-size: 20px;
-        padding: 5px 10px;
+    #contact-form input,
+    #contact-form select,
+    #contact-form textarea {
+        width: 100%;
+        font-size: 15px;
     }
 }
