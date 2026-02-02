@@ -25,8 +25,47 @@
 
     <main>
         <section class="vehicle">
-            <!--TODO: vehicle list-->
+            <h1>Our Vehicle Fleet</h1>
+
+            <div class="vehicle-content-SUV">
+                <i class="left-arrow" onclick="previousVehicleSuv()"></i>
+                <img src="Images/SUV/IMG_8028.jpeg" alt="SUV" class="SUV-image active">
+                <img src="Images/SUV/FullSizeRender.jpeg" alt="SUV" class="SUV-image">
+                <i class="right-arrow" onclick="nextVehicleSuv()"></i>
+                <h2>SUV</h2>
+                <p>Spacious and versatile, our SUVs are ideal for group travel and family outings, ensuring a smooth ride for everyone.</p>
+                <button class="book-now-btn"><a href="../PriceEstimatePage/pricing.html">Book Now</a></button>
+            </div>
+
+            <div class="vehicle-content-Limousine">
+                <i class="left-arrow" onclick="previousVehicleLimo()"></i>
+                <img src="Images/Limousine/IMG_1768.jpeg" alt="Limousine" class="Limousine-image active">
+                <img src="Images/Limousine/IMG_1770.jpeg" alt="Limousine" class="Limousine-image">
+                <img src="Images/Limousine/IMG_1771.jpeg" alt="Limousine" class="Limousine-image">
+                <img src="Images/Limousine/IMG_1772.jpeg" alt="Limousine" class="Limousine-image">
+                <img src="Images/Limousine/IMG_4404.jpeg" alt="Limousine" class="Limousine-image">
+                <i class="right-arrow" onclick="nextVehicleLimo()"></i>
+                <h2>Limousine</h2>
+                <p>Arrive in elegance with our luxurious limousines, perfect for weddings, proms, and other special events.</p>
+                <button class="book-now-btn"><a href="../PriceEstimatePage/pricing.html">Book Now</a></button>
+            </div>
+
+            <div class="vehicle-content-PartyBus">
+                <i class="left-arrow" onclick="previousVehiclePartyBus()"></i>
+                <img src="Images/Party Bus/IMG_0220.jpeg" alt="Party Bus" class="PartyBus-image active">
+                <img src="Images/Party Bus/IMG_0219.jpeg" alt="Party Bus" class="PartyBus-image">
+                <img src="Images/Party Bus/IMG_5471.jpeg" alt="Party Bus" class="PartyBus-image">
+                <img src="Images/Party Bus/IMG_5472.jpeg" alt="Party Bus" class="PartyBus-image">
+                <img src="Images/Party Bus/IMG_5474.jpeg" alt="Party Bus" class="PartyBus-image">
+                <img src="Images/Party Bus/IMG_5813.jpeg" alt="Party Bus" class="PartyBus-image">
+                <i class="right-arrow" onclick="nextVehiclePartyBus()"></i>
+                <h2>Party Bus</h2>
+                <p>Celebrate in style with our party buses, equipped with all the amenities you need for an unforgettable experience.</p>
+                <button class="book-now-btn"><a href="../PriceEstimatePage/pricing.html">Book Now</a></button>
+            </div>
         </section>
     </main>
+
+    <script src="vehicle-scripts.js"></script>
 </body>
 </html>

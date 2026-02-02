@@ -94,9 +94,10 @@ main {
 
 .vehicle {
     position: relative;
-    padding: 250px 300px;
+    padding: 250px 50px;
     min-height: 100vh;
     display: flex;
+    gap: 50px;
     z-index: 1;
     overflow: hidden;
 }
@@ -111,4 +112,134 @@ main {
     background: url(Images/ChatGPT\ Image\ Jan\ 3\,\ 2026\,\ 06_24_21\ PM.png) no-repeat center center;
     background-size: cover;
     z-index: -1;
+}
+
+.vehicle h1 {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    color: #d2ab56;
+    background-color: #0e0d09;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 15px 20px;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+.vehicle-content-SUV,
+.vehicle-content-Limousine,
+.vehicle-content-PartyBus {
+    color: white;
+    text-align: left;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 25px;
+    border-radius: 10px;
+    width: 1200px;
+    height: 500px;
+    position: relative;
+    top: -80px;
+    left: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vehicle-content-SUV img,
+.vehicle-content-Limousine img,
+.vehicle-content-PartyBus img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    left: 60px;
+}
+
+.vehicle-content-SUV img.active,
+.vehicle-content-Limousine img.active,
+.vehicle-content-PartyBus img.active {
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+}
+
+.left-arrow, .right-arrow {
+    border: solid #b89044;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+.left-arrow {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.left-arrow:hover {
+    border-color: #e2bc6a;
+    transition: 0.3s;
+}
+
+.right-arrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: relative;
+    left: 300px;
+    top: -86px;
+}
+
+.right-arrow:hover {
+    border-color: #e2bc6a;
+    transition: 0.3s;
+}
+
+.vehicle-content-SUV h2,
+.vehicle-content-Limousine h2,
+.vehicle-content-PartyBus h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: #d2ab56;
+}
+
+.vehicle-content-SUV p,
+.vehicle-content-Limousine p,
+.vehicle-content-PartyBus p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+button.book-now-btn {
+    background-color: #d2ab56;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.book-now-btn:hover {
+    background-color: #b89044;
+    transition: 0.3s;
 }
