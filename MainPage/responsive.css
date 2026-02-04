@@ -193,11 +193,11 @@
     }
 
     .make-reservation {
-        font-size: 10px;
+        font-size: 12px;
     }
 
-    .make-reservation a {
-        font-size: 14px;
+    .make-reservation p {
+        font-size: 13px;
     }
 
     .hero::before {
