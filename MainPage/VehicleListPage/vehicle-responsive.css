@@ -195,24 +195,6 @@
     }
 }
 
-/* .vehicle {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .vehicle-content-SUV {
-        order: 1;
-    }
-
-    .vehicle-content-PartyBus {
-        order: 2;
-    }
-
-    .vehicle-content-Limousine {
-        order: 3;
-    } */
-
-
 /* Dimentions for 480px or less */
 @media (max-width: 480px) {
     header img {
@@ -269,5 +251,14 @@
     .vehicle::before {
         background: url(Images/Screenshot\ 2026-02-03\ at\ 8.49.59\ PM.png) no-repeat center center;
         background-size: cover;
+    }
+}
+
+/* Dimentions for 390px or less */
+@media (max-width: 390px) {
+    .vehicle h1 {
+        font-size: 24px;
+        padding: 15px 10px;
+        width: 80%;
     }
 }
